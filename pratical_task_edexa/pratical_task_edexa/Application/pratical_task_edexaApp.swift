@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct pratical_task_edexaApp: App {
+    
+    init() {
+        UINavigationBar.appearance().barTintColor = UIColor.primaryColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmployeeListView()
         }
     }
 }

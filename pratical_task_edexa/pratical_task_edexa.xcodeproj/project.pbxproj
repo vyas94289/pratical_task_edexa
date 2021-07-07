@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BDAD02362695C3E400F3AF3E /* pratical_task_edexaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD02352695C3E400F3AF3E /* pratical_task_edexaApp.swift */; };
-		BDAD02382695C3E400F3AF3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD02372695C3E400F3AF3E /* ContentView.swift */; };
+		BDAD02382695C3E400F3AF3E /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD02372695C3E400F3AF3E /* EmployeeListView.swift */; };
 		BDAD023A2695C3E700F3AF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAD02392695C3E700F3AF3E /* Assets.xcassets */; };
 		BDAD023D2695C3E700F3AF3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAD023C2695C3E700F3AF3E /* Preview Assets.xcassets */; };
+		BDAD024E2695C65000F3AF3E /* EmployeeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD024D2695C65000F3AF3E /* EmployeeInfo.swift */; };
+		BDD276E22695D037007E6FC1 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276E12695D037007E6FC1 /* View+Extension.swift */; };
+		BDD276E62695D5C2007E6FC1 /* EmployeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276E52695D5C2007E6FC1 /* EmployeeListModel.swift */; };
+		BDD276E92695D708007E6FC1 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276E82695D708007E6FC1 /* Color+Extension.swift */; };
+		BDD276EC2695D905007E6FC1 /* EmployeeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276EB2695D905007E6FC1 /* EmployeeCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDAD02322695C3E400F3AF3E /* pratical_task_edexa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratical_task_edexa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAD02352695C3E400F3AF3E /* pratical_task_edexaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pratical_task_edexaApp.swift; sourceTree = "<group>"; };
-		BDAD02372695C3E400F3AF3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BDAD02372695C3E400F3AF3E /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
 		BDAD02392695C3E700F3AF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDAD023C2695C3E700F3AF3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDAD023E2695C3E700F3AF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAD024D2695C65000F3AF3E /* EmployeeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfo.swift; sourceTree = "<group>"; };
+		BDD276E12695D037007E6FC1 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		BDD276E52695D5C2007E6FC1 /* EmployeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModel.swift; sourceTree = "<group>"; };
+		BDD276E82695D708007E6FC1 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		BDD276EB2695D905007E6FC1 /* EmployeeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 		BDAD02482695C4BD00F3AF3E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BDAD024D2695C65000F3AF3E /* EmployeeInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,6 +116,8 @@
 		BDAD02492695C4C400F3AF3E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BDD276E12695D037007E6FC1 /* View+Extension.swift */,
+				BDD276E82695D708007E6FC1 /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -112,7 +125,9 @@
 		BDAD024A2695C4CE00F3AF3E /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				BDAD02372695C3E400F3AF3E /* ContentView.swift */,
+				BDAD02372695C3E400F3AF3E /* EmployeeListView.swift */,
+				BDD276E52695D5C2007E6FC1 /* EmployeeListModel.swift */,
+				BDD276EB2695D905007E6FC1 /* EmployeeCellView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -194,7 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAD02382695C3E400F3AF3E /* ContentView.swift in Sources */,
+				BDAD024E2695C65000F3AF3E /* EmployeeInfo.swift in Sources */,
+				BDD276E92695D708007E6FC1 /* Color+Extension.swift in Sources */,
+				BDD276EC2695D905007E6FC1 /* EmployeeCellView.swift in Sources */,
+				BDD276E62695D5C2007E6FC1 /* EmployeeListModel.swift in Sources */,
+				BDAD02382695C3E400F3AF3E /* EmployeeListView.swift in Sources */,
+				BDD276E22695D037007E6FC1 /* View+Extension.swift in Sources */,
 				BDAD02362695C3E400F3AF3E /* pratical_task_edexaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
