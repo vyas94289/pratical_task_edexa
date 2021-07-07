@@ -33,7 +33,7 @@ struct EmployeeCellView: View {
                         Spacer()
                         Text(info.fullName)
                         Divider()
-                        Text(info.city.rawValue)
+                        Text(info.city)
                             .font(.callout)
                             .foregroundColor(.gray)
                         Spacer()

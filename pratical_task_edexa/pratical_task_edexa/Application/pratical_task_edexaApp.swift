@@ -20,7 +20,7 @@ struct pratical_task_edexaApp: App {
     
     var body: some Scene {
         WindowGroup {
-            EmployeeListView()
+            TabbarView()
         }
     }
 }

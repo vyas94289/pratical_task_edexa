@@ -16,6 +16,11 @@
 		BDD276E62695D5C2007E6FC1 /* EmployeeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276E52695D5C2007E6FC1 /* EmployeeListModel.swift */; };
 		BDD276E92695D708007E6FC1 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276E82695D708007E6FC1 /* Color+Extension.swift */; };
 		BDD276EC2695D905007E6FC1 /* EmployeeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276EB2695D905007E6FC1 /* EmployeeCellView.swift */; };
+		BDD276EF2695E472007E6FC1 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276EE2695E472007E6FC1 /* WebServices.swift */; };
+		BDD276F22695E490007E6FC1 /* EmployeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276F12695E490007E6FC1 /* EmployeeAPI.swift */; };
+		BDD276F62695E4A8007E6FC1 /* WebServiceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276F52695E4A8007E6FC1 /* WebServiceConstant.swift */; };
+		BDD276FC2695E4BC007E6FC1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276FB2695E4BC007E6FC1 /* AppError.swift */; };
+		BDD277002695EB95007E6FC1 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD276FF2695EB95007E6FC1 /* TabbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		BDD276E52695D5C2007E6FC1 /* EmployeeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListModel.swift; sourceTree = "<group>"; };
 		BDD276E82695D708007E6FC1 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		BDD276EB2695D905007E6FC1 /* EmployeeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCellView.swift; sourceTree = "<group>"; };
+		BDD276EE2695E472007E6FC1 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		BDD276F12695E490007E6FC1 /* EmployeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeAPI.swift; sourceTree = "<group>"; };
+		BDD276F52695E4A8007E6FC1 /* WebServiceConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceConstant.swift; sourceTree = "<group>"; };
+		BDD276FB2695E4BC007E6FC1 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BDD276FF2695EB95007E6FC1 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,8 @@
 		BDAD02462695C4A800F3AF3E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				BDD276FB2695E4BC007E6FC1 /* AppError.swift */,
+				BDD276F52695E4A8007E6FC1 /* WebServiceConstant.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -101,6 +113,8 @@
 		BDAD02472695C4AF00F3AF3E /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				BDD276EE2695E472007E6FC1 /* WebServices.swift */,
+				BDD276F12695E490007E6FC1 /* EmployeeAPI.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -128,6 +142,7 @@
 				BDAD02372695C3E400F3AF3E /* EmployeeListView.swift */,
 				BDD276E52695D5C2007E6FC1 /* EmployeeListModel.swift */,
 				BDD276EB2695D905007E6FC1 /* EmployeeCellView.swift */,
+				BDD276FF2695EB95007E6FC1 /* TabbarView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -209,12 +224,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD276F62695E4A8007E6FC1 /* WebServiceConstant.swift in Sources */,
+				BDD276F22695E490007E6FC1 /* EmployeeAPI.swift in Sources */,
 				BDAD024E2695C65000F3AF3E /* EmployeeInfo.swift in Sources */,
 				BDD276E92695D708007E6FC1 /* Color+Extension.swift in Sources */,
 				BDD276EC2695D905007E6FC1 /* EmployeeCellView.swift in Sources */,
 				BDD276E62695D5C2007E6FC1 /* EmployeeListModel.swift in Sources */,
+				BDD277002695EB95007E6FC1 /* TabbarView.swift in Sources */,
 				BDAD02382695C3E400F3AF3E /* EmployeeListView.swift in Sources */,
+				BDD276FC2695E4BC007E6FC1 /* AppError.swift in Sources */,
 				BDD276E22695D037007E6FC1 /* View+Extension.swift in Sources */,
+				BDD276EF2695E472007E6FC1 /* WebServices.swift in Sources */,
 				BDAD02362695C3E400F3AF3E /* pratical_task_edexaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

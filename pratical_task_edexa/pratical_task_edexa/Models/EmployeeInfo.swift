@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EmployeeInfo: Codable, Identifiable {
     let id: Int
-    let city: City
+    let city: String
     let lastName, firstName: String
     
     var fullName: String {
@@ -21,12 +21,6 @@ struct EmployeeInfo: Codable, Identifiable {
         case lastName = "last_name"
         case firstName = "first_name"
     }
-}
-
-enum City: String, Codable {
-    case chicago = "Chicago"
-    case losAngeles = "Los Angeles"
-    case newYork = "NewYork"
 }
 
 var dummy: [EmployeeInfo] {
