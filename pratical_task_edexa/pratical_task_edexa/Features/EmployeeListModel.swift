@@ -27,7 +27,7 @@ class EmployeeListViewModel: ObservableObject {
         Publishers.CombineLatest($searchText, selectedTab).sink { _state in
             self.filter()
         }.store(in: &bag)
-       
+
     }
     
     func tabColorFor(tab: String) -> Color {

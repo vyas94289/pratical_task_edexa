@@ -17,7 +17,6 @@ struct EmployeeCellView: View {
                 RoundedRectangle(cornerRadius: 8)
                     .strokeBorder(Color.gray,lineWidth: 0.5)
                     
-                    
             }
             .background(color)
             .cornerRadius(8)
@@ -46,20 +45,28 @@ struct EmployeeCellView: View {
                 Spacer()
             }
         }
+        .onAppear {
+            self.setColor()
+        }
         .padding(.horizontal, 8)
         .frame(maxWidth: .infinity)
         .onLongPressGesture {
-            longPressAt(id: info.id)
+            longPressAt()
         }
+        
     }
     
-    func longPressAt(id: Int) {
-        if selectedIds.contains(id) {
-            selectedIds.removeAll(where: {$0 == id})
+    func longPressAt() {
+        if selectedIds.contains(info.id) {
+            selectedIds.removeAll(where: {$0 == info.id})
         } else {
-            selectedIds.append(id)
+            selectedIds.append(info.id)
         }
-        color = selectedIds.contains(id) ? Color(.primaryColor).opacity(0.5) : Color.clear
+        setColor()
+    }
+    
+    func setColor() {
+        color = selectedIds.contains(info.id) ? Color(.primaryColor).opacity(0.5) : Color.clear
     }
 
 }
