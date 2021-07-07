@@ -52,10 +52,13 @@
 		BDAD02342695C3E400F3AF3E /* pratical_task_edexa */ = {
 			isa = PBXGroup;
 			children = (
-				BDAD02352695C3E400F3AF3E /* pratical_task_edexaApp.swift */,
-				BDAD02372695C3E400F3AF3E /* ContentView.swift */,
-				BDAD02392695C3E700F3AF3E /* Assets.xcassets */,
-				BDAD023E2695C3E700F3AF3E /* Info.plist */,
+				BDAD02452695C49400F3AF3E /* Application */,
+				BDAD02462695C4A800F3AF3E /* Helper */,
+				BDAD02472695C4AF00F3AF3E /* WebServices */,
+				BDAD02482695C4BD00F3AF3E /* Models */,
+				BDAD02492695C4C400F3AF3E /* Extensions */,
+				BDAD024A2695C4CE00F3AF3E /* Features */,
+				BDAD024B2695C4E400F3AF3E /* Resources */,
 				BDAD023B2695C3E700F3AF3E /* Preview Content */,
 			);
 			path = pratical_task_edexa;
@@ -67,6 +70,59 @@
 				BDAD023C2695C3E700F3AF3E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDAD02452695C49400F3AF3E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BDAD02352695C3E400F3AF3E /* pratical_task_edexaApp.swift */,
+				BDAD023E2695C3E700F3AF3E /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BDAD02462695C4A800F3AF3E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BDAD02472695C4AF00F3AF3E /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		BDAD02482695C4BD00F3AF3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BDAD02492695C4C400F3AF3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDAD024A2695C4CE00F3AF3E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BDAD02372695C3E400F3AF3E /* ContentView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		BDAD024B2695C4E400F3AF3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDAD02392695C3E700F3AF3E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"pratical_task_edexa/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = pratical_task_edexa/Info.plist;
+				INFOPLIST_FILE = pratical_task_edexa/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"pratical_task_edexa/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = pratical_task_edexa/Info.plist;
+				INFOPLIST_FILE = pratical_task_edexa/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
